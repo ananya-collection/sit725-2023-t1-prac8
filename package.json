@@ -9,18 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chathura-dandeniya/sit725-2023-t2-prac2.git"
+    "url": "git+https://github.com/ananyaKrishnan-2023/sit725-2023-t2-prac2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chathura-dandeniya/sit725-2023-t2-prac2/issues"
+    "url": "https://github.com/ananyaKrishnan-2023/sit725-2023-t2-prac2/issues"
   },
-  "homepage": "https://github.com/chathura-dandeniya/sit725-2023-t2-prac2#readme",
+  "homepage": "https://github.com/ananyaKrishnan-2023/sit725-2023-t2-prac2#readme",
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "mongodb": "^4.4.1",
     "nodemon": "^3.0.1",
     "sqlite3": "^5.1.6"
   }
