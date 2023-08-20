@@ -53,5 +53,5 @@ $(document).ready(function(){
         formSubmitted();
     });
     $('.modal').modal();
-    getAllCats();
+    getAllCats()
 });
