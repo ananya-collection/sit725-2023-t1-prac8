@@ -14,6 +14,11 @@ router.get('/api/cats', (req,res) => {
   router.post('/api/cat', (req,res)=>{
     controller.catPost(req, res);
   });
+  
+  //routing to delete fn logic in controller file
+  router.delete('/api/cat/:id', (req,res)=>{
+    controller.catDel(req, res);
+  });
 
 //exporting router
   module.exports = router;

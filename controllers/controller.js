@@ -14,6 +14,19 @@ const catPost = (req, res)=> {
     });
 }
 
+//delete API in back-end from where response is sent back
+function catDel(req,res){
+  const id_cat = req.params.id;
+  collection.catDel(id_cat, (err, result)=>{
+    if(!err){
+      res.json({statusCode:200, data:result, message:'delete success'});
+    }
+    else{
+      res.json({ statusCode: 500, message: 'Internal server error' });
+    }
+  })
+}
+
 //get fn operation performed in the back-end and response is sent back
 const getAllCats = (req, res)=> {
     collection.getAllCats((err, result)=> {
@@ -26,4 +39,4 @@ const getAllCats = (req, res)=> {
       });
 }
 
-module.exports = {catPost, getAllCats}
+module.exports = {catPost, getAllCats, catDel}
