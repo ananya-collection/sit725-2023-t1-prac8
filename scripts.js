@@ -47,6 +47,12 @@ function getAllCats(){
     });
 }
 
+let socket = io();
+//message is received from the back-end
+socket.on('num', (message)=>{
+    console.log('The number is:' + message);
+});
+
 $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{
