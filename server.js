@@ -3,7 +3,7 @@ let express = require('express');
 //initialize an express application
 let app = express();
 //set the server port. Initially, it tries to use the PORT environment variable value,but if it doesn't exist/undefined, it uses 3000 by default as the port
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 8080;
 let db = require('./dbConnection');
 let router = require('./routers/router');
 //const {Socket} = require('socket.io');
